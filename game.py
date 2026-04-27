@@ -1,10 +1,20 @@
 import pygame
 
 
-#Spielfenster wird festgelegt
+class Player_List:
+    # Liste mit Spielern
+    def player_list():
+        players = []
+
+
+# Spielfenster wird festgelegt
 def create_window():
-    window = pygame.display.set_mode((1100, 650))
-    pygame.display.set_caption("AMIGO-FLUSH")
-    window.fill((100,100,200))
+    window = pygame.display.set_mode((1200, 700))
+    pygame.display.set_caption("AMIGO-FLUSH")  
     return window
+
+
+# Hintergrundbild laden
+def load_background():
+    return pygame.transform.scale(pygame.image.load("wood.png"), (1200, 700))
 

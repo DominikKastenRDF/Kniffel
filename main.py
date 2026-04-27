@@ -1,25 +1,30 @@
 import os, pygame, game
 
-#Konsole leeren
+
+# Konsole leeren
 os.system("cls")
 
 
-#Aufruf Window aus game.py
+# Pygame initialisieren
+pygame.init()
+
+
+# Das Fenster und der Hintergrund werden aus game.py aufgerufen
 game_window = game.create_window()
+background = game.load_background()
 
 
-#Hier wird das Spiel als Loop ausgegeben
+# Hier wird das Spiel als Loop ausgegeben
 running = True
 while running:
 
-    #Schließen mit dem Fenster X
+    game_window.blit(background, (0, 0))
+
+    # Schließen des Fensters mit X
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-            
 
-    #Updatet das Window
     pygame.display.update()
-
 
 pygame.quit()
