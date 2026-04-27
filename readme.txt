@@ -1,3 +1,5 @@
+Wir sollen das Spiel Kniffel Programmieren.
+
 1. Classes
 
     Player
