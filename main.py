@@ -21,6 +21,9 @@ dice_3 = dice.Dice(1000, 300)
 dice_4 = dice.Dice(1000, 400)
 dice_5 = dice.Dice(1000, 500)
 
+#Button zum Würfeln wird initalisiert
+dice_button = dice.Dicebutton(980, 600)
+
 #Scoresheed wird initalisiert
 scoresheed = scoresheed.Scoresheed(50, 50)
 
@@ -39,11 +42,13 @@ while running:
     dice_3.draw_dice(game_window)
     dice_4.draw_dice(game_window)
     dice_5.draw_dice(game_window)
-    
+
+
     #Scoresheed wird angezeigt
     scoresheed.draw_scoresheed(game_window)
     
-
+    #Dicebutton wird angezeigt
+    dice_button.draw_dice_button(game_window)
 
 
 
@@ -57,4 +62,3 @@ while running:
     pygame.display.update()
 
 pygame.quit()
-
