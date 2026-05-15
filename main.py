@@ -16,7 +16,7 @@ pygame.init()
 game_window = game.create_window()
 background = game.load_background()
 
-#Dice wird initalisiert
+#Objekt Dice wird initalisiert
 dice_1 = dice.Dice(1000, 100)
 dice_2 = dice.Dice(1000, 200)
 dice_3 = dice.Dice(1000, 300)
