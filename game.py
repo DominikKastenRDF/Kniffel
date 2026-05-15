@@ -1,11 +1,14 @@
 import pygame
 
+#----------------------------------------------------------------------
 
+#Klasse für die Spielerliste
 class Player_List:
     # Liste mit Spielern
     def player_list():
         players = []
 
+#----------------------------------------------------------------------
 
 # Spielfenster wird festgelegt
 def create_window():
@@ -13,6 +16,7 @@ def create_window():
     pygame.display.set_caption("AMIGO-FLUSH")  
     return window
 
+#----------------------------------------------------------------------
 
 # Hintergrundbild laden
 def load_background():

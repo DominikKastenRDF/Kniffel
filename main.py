@@ -1,14 +1,16 @@
 import os,pygame,game,dice,scoresheed
 
+#----------------------------------------------------------------------
 
 # Konsole leeren
 os.system("cls")
 
+#----------------------------------------------------------------------
 
 # Pygame initialisieren
 pygame.init()
 
-
+#----------------------------------------------------------------------
 
 # Das Fenster und der Hintergrund werden aus game.py aufgerufen
 game_window = game.create_window()
@@ -27,7 +29,7 @@ dice_button = dice.Dicebutton(980, 600)
 #Scoresheed wird initalisiert
 scoresheed = scoresheed.Scoresheed(50, 50)
 
-
+#----------------------------------------------------------------------
 
 # Hier wird das Spiel als Loop ausgegeben
 running = True

@@ -1,5 +1,8 @@
 import pygame
 
+#----------------------------------------------------------------------
+
+#Klasse für den Spielzettel
 class Scoresheed:
     def __init__(self, x,y):
             self.x = x
@@ -15,9 +18,9 @@ class Scoresheed:
         oberer_teil = ["Eins","Zwei","Drei","Vier","Fünf","Sex","Oberer-Teil ohne Bonus","Bonus","Oberer-Teil mit Bonus"]
         unterer_teil = ["Dreierpasch","Viererpasch","Full House","Kleine Straße","Große Straße","Kniffel","Chance","Unterer-Teil","Gesamtpunkte"]
 
-
-
-
+        #
+        #
+        #
 
         return scoresheed_background, oberer_teil, unterer_teil
     
