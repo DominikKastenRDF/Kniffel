@@ -52,7 +52,11 @@ while running:
     #Dicebutton wird angezeigt
     dice_button.draw_dice_button(game_window)
 
+    #Test um Print auszugeben
 
+
+
+#----------------------------------------------------------------------
 
     # Schließen des Fensters mit X
     for event in pygame.event.get():

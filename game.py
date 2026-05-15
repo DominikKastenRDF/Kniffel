@@ -21,3 +21,4 @@ def create_window():
 # Hintergrundbild laden
 def load_background():
     return pygame.transform.scale(pygame.image.load("wood.png"), (1200, 700))
+
